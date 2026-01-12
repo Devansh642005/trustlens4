@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrustLens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🔍 TrustLens</h1>
+  <p>Check before you trust</p>
+
+  <textarea id="inputText" placeholder="Paste message or link..."></textarea>
+  <button onclick="analyze()">Analyze</button>
+
+  <!-- RESULT SECTION (THIS WAS THE PROBLEM) -->
+  <div id="result" class="hidden">
+    <h2 id="status"></h2>
+    <p>Trust Score: <span id="score"></span>/100</p>
+    <ul id="reasons"></ul>
+  </div>
+</div>
+
+<!-- AI Assistant -->
+<div id="ai-assistant" onclick="toggleAssistant()">
+  <div id="ai-bot">🤖</div>
+  <div id="ai-bubble" class="hidden">
+    Hi! I’m TrustBot 👋 Click Analyze to scan messages.
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
