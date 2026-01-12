@@ -49,4 +49,4 @@ function analyze() {
     bubble.innerHTML = "❌ Error analyzing content";
     console.error(err);
   };
-
+  
